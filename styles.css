@@ -1040,3 +1040,56 @@ textarea:focus {
 .contact-info p {
   margin: 5px 0;
 }
+
+
+.offers-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.offers-container header {
+  text-align: center;
+  padding: 20px 0;
+}
+.offers-container header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+.offers-container .content {
+  padding: 20px;
+}
+.offers-container .offer {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.offers-container .offer img {
+  width: 30%;
+  border-right: 1px solid #ddd;
+}
+.offers-container .offer-details {
+  padding: 20px;
+  flex: 1;
+}
+.offers-container .offer-details h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #2c3e50;
+}
+.offers-container .offer-details p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+.offers-container .offer-details .price {
+  font-size: 1.2em;
+  color: #e74c3c;
+  font-weight: bold;
+}
