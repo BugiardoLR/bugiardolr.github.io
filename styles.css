@@ -176,12 +176,12 @@ input {
 }
 
 
-.btn find-hotel {
+.submit find-hotel {
   color: white;
   background-color: black;
 }
 
-.btn {
+.submit {
   backface-visibility: hidden;
   background-color: #fff;
   border-radius: 8px;
@@ -806,7 +806,7 @@ textarea:focus {
   margin-bottom: 5px;
 }
 
-.hotel-info .book-btn {
+.hotel-info .book-submit {
   display: inline-block;
   background-color: #0069d9;
   color: #fff;
@@ -816,7 +816,7 @@ textarea:focus {
   transition: background-color 0.3s;
 }
 
-.hotel-info .book-btn:hover {
+.hotel-info .book-submit:hover {
   background-color: #c04c05;
 }
 
