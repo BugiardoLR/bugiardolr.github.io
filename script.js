@@ -83,7 +83,7 @@ let plovText = document.getElementById("plov-text");
 plovDiv.addEventListener('mouseenter', () => plovText.classList.add("hover-country-text"));
 plovDiv.addEventListener('mouseleave', () => plovText.classList.remove("hover-country-text"));
 
-let hotelSearch = document.getElementById('submit-submit');
+let hotelSearch = document.getElementById('submit-btn');
 hotelSearch.addEventListener('click', function() {
     const locationInput = document.getElementById('locationInput');
     if (!locationInput.value.trim()) {
