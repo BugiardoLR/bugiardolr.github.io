@@ -23,7 +23,6 @@
                 <ul class="nav-menu">
                     <li> <a href="hotels.html" class="nav-list">Хотели</a> </li>
                     <li> <a href="offers.html" class="nav-list">Оферти</a> </li>
-                    <li> <a href="#meetings-events" class="nav-list">Срещи & Събития</a> </li>
                 </ul>
 
                 <div class="hamburger">
@@ -43,14 +42,14 @@
             <input type="text" id="locationInput" class="location" placeholder="Град, село или забележителност..."
                 required />
 
-            <button type="submit" class="submit date" onclick="dateOpenPopup()">Дата</button>
+            <button type="submit" class="submit date" title="calendar" onclick="dateOpenPopup()">Дата</button>
             <div class="date-popup" id="date-popup">
                 <h2>Избери дата</h2>
                 <input type="text" id="datepicker">
-                <button type="button" onclick="dateClosePopup()">OK</button>
+                <button type="button" title="calendar-ok-button" onclick="dateClosePopup()">OK</button>
             </div>
 
-            <button type="submit" class="submit room" onclick="roomOpenPopup()">Стаи & Гости</button>
+            <button type="submit" class="submit room" title="rooms-and-guests button" onclick="roomOpenPopup()">Стаи & Гости</button>
             <div class="room-popup" id="room-popup">
                 <h2>Стаи и Гости</h2>
                 <div class="container-room">
@@ -66,7 +65,7 @@
 
                 </div>
             </div>
-            <button type="submit" class="submit special-rates" onclick="ratesOpenPopup()">Отстъпки</button>
+            <button type="submit" class="submit special-rates" title="discounts-button" onclick="ratesOpenPopup()">Отстъпки</button>
             <div class="rates-popup" id="rates-popup">
                 <h2>Отстъпки</h2>
                 <form class="special-rates-checkbox">
@@ -100,10 +99,10 @@
                 </form>
 
 
-                <button type="button" onclick="ratesClosePopup()">OK</button>
+                <button type="button" title="rates-button" onclick="ratesClosePopup()">OK</button>
             </div>
 
-            <button type="submit" id="submit-btn" class="submit find-hotels">Намери Хотел!</button>
+            <button type="submit" id="submit-btn" title="find-hotels-button" class="submit find-hotels">Намери Хотел!</button>
 
         </div>
 
@@ -115,7 +114,7 @@
             <h2>Скритото Бижу на Балканите</h2>
             <p>България – страна на древна история, великолепна природа и гостоприемни хора!</p>
             <a href="bulgaria.html">
-                <button class="submit">Виж повече</button>
+                <button class="submit" title="see-more-about-bg">Виж повече</button>
             </a>
         </div>
 
@@ -157,13 +156,13 @@
                     Витоша. Още през следващата година през месец юли, на връх Мусала, първите призьори получават
                     златните си значки. Днес в страната има над 8900 души носители на златни значки.</p>
                 <a href="https://www.btsbg.org/nacionalni-dvizheniya/100-nacionalni-turisticheski-obekta">
-                    <button type="submit" class="submit">Виж повече</button>
+                    <button type="submit" class="submit" title="see more">Виж повече</button>
                 </a>
             </div>
         </div>
 
         <div class="back-to-top">
-            <button onclick="topFunction()" class="submit"> ⬆ Обратно нагоре</button>
+            <button onclick="topFunction()" class="submit" title="back-to-top"> ⬆ Обратно нагоре</button>
         </div>
     </div>
     <hr class="footer-line">
