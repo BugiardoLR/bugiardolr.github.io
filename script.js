@@ -89,7 +89,7 @@ hotelSearch.addEventListener('click', function() {
     if (!locationInput.value.trim()) {
         alert('Полето не може да бъде празно!');
     } else {
-        document.getElementById('locationForm').submit(); // Programmatically submit the form
+        document.getElementById('locationForm').submit(); 
     }
 });
 
@@ -107,6 +107,6 @@ document.getElementById('kopriv-div').addEventListener('click', function() {
 document.getElementById('sofia-div').addEventListener('click', function() {
     window.location.href = 'sofia.html';
 });
-document.getElementById('nesebar-div').addEventListener('click', function() {
+document.getElementById('nes-div').addEventListener('click', function() {
     window.location.href = 'nesebar.html';
 });

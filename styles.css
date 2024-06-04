@@ -818,7 +818,7 @@ textarea:focus {
 .hotel-info .amenities span {
   display: inline-block;
   background-color: #eef;
-  color: #337ab7;
+  color: #c04c05;
   padding: 5px 10px;
   border-radius: 5px;
   margin-right: 5px;
@@ -1011,13 +1011,13 @@ textarea:focus {
 .contacts-container header h1 {
   margin: 0;
   font-size: 2.5em;
-  color: #2c3e50;
+  color: #c04c05;
 }
 .contacts-container .contact-content {
   padding: 20px;
 }
 .contact-content h2 {
-  color: #2c3e50;
+  color: #c04c05;
 }
 .contact-content p {
   line-height: 1.6;
@@ -1043,7 +1043,7 @@ textarea:focus {
 }
 .form-group button {
   padding: 10px 20px;
-  background-color: #3498db;
+  background-color: #c04c05;
   border: none;
   color: white;
   font-size: 1em;
@@ -1078,7 +1078,7 @@ textarea:focus {
 .offers-container header h1 {
   margin: 0;
   font-size: 2.5em;
-  color: #2c3e50;
+  color: #c04c05;
 }
 .offers-container .content {
   padding: 20px;
@@ -1101,7 +1101,7 @@ textarea:focus {
 .offers-container .offer-details h2 {
   margin: 0 0 10px;
   font-size: 1.5em;
-  color: #2c3e50;
+  color: #c04c05;
 }
 .offers-container .offer-details p {
   margin: 10px 0;
@@ -1122,7 +1122,15 @@ textarea:focus {
   margin-top: 20px;
   border-radius: 8px;
 }
-
+.koprivshtitsa-container header {
+  text-align: center;
+  padding: 20px 0;
+}
+.koprivshtitsa-container header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #c04c05;
+}
 .koprivshtitsa-container .content {
   padding: 20px;
 }
@@ -1131,8 +1139,8 @@ textarea:focus {
 }
 .koprivshtitsa-container .section h2 {
   font-size: 2em;
-  color: #2c3e50;
-  border-bottom: 2px solid #3498db;
+  color: #c04c05;
+  border-bottom: 2px solid #c04c05;
   padding-bottom: 10px;
 }
 .koprivshtitsa-container .section p {
@@ -1166,8 +1174,8 @@ textarea:focus {
 }
 .nessebar-container .section h2 {
   font-size: 2em;
-  color: #2c3e50;
-  border-bottom: 2px solid #3498db;
+  color: #c04c05;
+  border-bottom: 2px solid #c04c05;
   padding-bottom: 10px;
 }
 .nessebar-container .section p {
@@ -1182,6 +1190,15 @@ textarea:focus {
 .nessebar-container .image-gallery img {
   width: calc(33.333% - 10px);
   border-radius: 8px;
+}
+.nessebar-container header {
+  text-align: center;
+  padding: 20px 0;
+}
+.nessebar-container header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #c04c05;
 }
 
 .sofia-container {
@@ -1201,7 +1218,7 @@ textarea:focus {
 .sofia-container header h1 {
   margin: 0;
   font-size: 2.5em;
-  color: #2c3e50;
+  color: #c04c05;
 }
 .sofia-container .content {
   padding: 20px;
@@ -1211,8 +1228,8 @@ textarea:focus {
 }
 .sofia-container .section h2 {
   font-size: 2em;
-  color: #2c3e50;
-  border-bottom: 2px solid #3498db;
+  color: #c04c05;
+  border-bottom: 2px solid #c04c05;
   padding-bottom: 10px;
 }
 .sofia-container .section p {
@@ -1245,7 +1262,7 @@ textarea:focus {
 .plovdiv-container header h1 {
   margin: 0;
   font-size: 2.5em;
-  color: #2c3e50;
+  color: #c04c05;
 }
 .plovdiv-container .content {
   padding: 20px;
@@ -1255,8 +1272,8 @@ textarea:focus {
 }
 .plovdiv-container .section h2 {
   font-size: 2em;
-  color: #2c3e50;
-  border-bottom: 2px solid #3498db;
+  color: #c04c05;
+  border-bottom: 2px solid #c04c05;
   padding-bottom: 10px;
 }
 .plovdiv-container .section p {
