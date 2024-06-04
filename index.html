@@ -38,13 +38,14 @@
     <div class="location-ask">
         <span class="where-to">Накъде?</span> <span class="required">(Задължително) </span> <br />
         <div class="booking">
-
+            <label for="locationInput">Търсене </label>
             <input type="text" id="locationInput" class="location" placeholder="Град, село или забележителност..."
                 required />
 
             <button type="submit" class="submit date" title="calendar" onclick="dateOpenPopup()">Дата</button>
             <div class="date-popup" id="date-popup">
                 <h2>Избери дата</h2>
+                <label for="datepicker">Дата </label>
                 <input type="text" id="datepicker">
                 <button type="button" title="calendar-ok-button" onclick="dateClosePopup()">OK</button>
             </div>
@@ -69,20 +70,20 @@
             <div class="rates-popup" id="rates-popup">
                 <h2>Отстъпки</h2>
                 <form class="special-rates-checkbox">
-                    <label class="special-rates-checkbox">Използвайте Точки
-                        <input type="checkbox">
+                    <label class="special-rates-checkbox" for="points">Използвайте Точки
+                        <input type="checkbox" id="points">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="special-rates-checkbox">Туристически Агенти
-                        <input type="checkbox">
+                    <label class="special-rates-checkbox" for="agents">Туристически Агенти
+                        <input type="checkbox" id="agents">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="special-rates-checkbox">Пенсионерска отстъпка
-                        <input type="checkbox">
+                    <label class="special-rates-checkbox" for="pension">Пенсионерска отстъпка
+                        <input type="checkbox" id="pension">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="special-rates-checkbox">Правителствена / Военна отстъпка
-                        <input type="checkbox">
+                    <label class="special-rates-checkbox" for="gov">Правителствена / Военна отстъпка
+                        <input type="checkbox" id="gov">
                         <span class="checkmark"></span>
                     </label>
 
