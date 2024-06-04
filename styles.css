@@ -641,7 +641,7 @@ textarea:focus {
   margin-top: 30px;
 }
 
-.social-icons i {
+.social-icons em {
   font-size: 22px;
   margin: 10px;
   cursor: pointer;
