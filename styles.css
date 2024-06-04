@@ -356,8 +356,9 @@ input[type="number"] {
   caret-color: transparent;
 }
 
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none !important;
+input[type="number"]{
+  /* -webkit-inner-spin-button */
+  /* -webkit-appearance: none !important; */
   opacity: 1 !important;
   background: transparent !important;
   border-width: 0px;
@@ -387,12 +388,12 @@ textarea:focus {
 
 
 
-.special-rates-checkbox {
+.special-rates-checkbox fieldset{
   font-size: 0.9rem;
   font-weight: bold;
   line-height: 1.1;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 0fr 0fr;
   gap: 0.5em;
 }
 
@@ -655,7 +656,7 @@ textarea:focus {
 
   .experience-images img {
     width: 404.59px;
-    height: 269.72;
+    height: 269.72px;
   }
 
   .different-hotels {
