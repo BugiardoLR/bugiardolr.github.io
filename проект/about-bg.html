@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чучни тук</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.umd.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b8a58bc95c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header" id="navigation-menu">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <img src="b3d21d3e17ad43b7a89fccfcd81a4e4b-removebg-preview.png" alt="logo image">
+                </a>
+                <ul class="nav-menu">
+                    <li> <a href="hotels.html" class="nav-list">Хотели</a> </li>
+                    <li> <a href="offers.html" class="nav-list">Оферти</a> </li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="location-ask">
+        <span class="where-to">Накъде?</span> <span class="required">(Задължително) </span> <br />
+        <div class="booking">
+
+                <label class="location-label"></label>
+                <input type="text" id="locationInput" class="location" placeholder="Град, село или забележителност..."
+                    required />
+
+            <button type="submit" class="submit date" onclick="dateOpenPopup()">Дата</button>
+            <div class="date-popup" id="date-popup">
+                <h2>Избери дата</h2>
+                <input type="text" id="datepicker">
+                <button type="button" onclick="dateClosePopup()">OK</button>
+            </div>
+
+            <button type="submit" class="submit room" onclick="roomOpenPopup()">Стаи & Гости</button>
+            <div class="room-popup" id="room-popup">
+                <h2>Стаи и Гости</h2>
+                <div class="container-room">
+                    <form>
+                        <label for="rooms">Стаи:</label>
+                        <input type="number" id="rooms" value=1><br><br>
+                        <label for="adults">Възрастни:</label>
+                        <input type="number" id="adults" value=1><br><br>
+                        <label for="kids">Деца:</label>
+                        <input type="number" id="kids" value=0><br><br>
+                    </form>
+                    <button type="button" onclick="roomClosePopup()">OK</button>
+
+                </div>
+            </div>
+            <button type="submit" class="submit special-rates" onclick="ratesOpenPopup()">Отстъпки</button>
+            <div class="rates-popup" id="rates-popup">
+                <h2>Отстъпки</h2>
+                <form class="special-rates-checkbox">
+                    <label class="special-rates-checkbox">Използвайте Точки
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="special-rates-checkbox">Туристически Агенти
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="special-rates-checkbox">Пенсионерска отстъпка
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="special-rates-checkbox">Правителствена / Военна отстъпка
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                </form>
+                <form class="special-rates-text">
+
+                    <label for="promotion-code">Промоционален Код</label><br>
+                    <input type="text" id="promotion-code"><br><br>
+                    <label for="group-code">Групов Код</label><br>
+                    <input type="text" id="group-code"><br><br>
+                    <label for="corporate-account">Корпоративен Код</label><br>
+                    <input type="text" id="corporate-account"><br><br>
+
+                </form>
+
+
+                <button type="button" onclick="ratesClosePopup()">OK</button>
+            </div>
+
+            <button type="submit" id="submit-submit" class="submit find-hotels">Намери Хотел!</button>
+
+        </div>
+
+        <div class="hotel-front-container">
+            <img src="kempinski hotel grand arena.jpg" alt="picture of the front of the hotel" class="hotel-front">
+        </div>
+
+        <div class="welcome-text">
+            <h2>Скритото Бижу на Балканите</h2>
+            <p>България – страна на древна история, великолепна природа и гостоприемни хора!</p>
+            <a href="about-bg.html">
+                <button class="submit">Виж повече</button>
+            </a>
+        </div>
+
+        <div class="subheading">
+            <h2>Вълнуващи дестинации</h2>
+            <p>Пътувайте през най-красивите места в България!</p>
+        </div>
+
+        <div class="destinations-images">
+
+            <div class="country" id="vt-div">
+                <img src="https://cdn.pixabay.com/photo/2017/08/16/16/54/nessebar-2648435_1280.jpg"
+                    alt="veliko tarnovo">
+                <div class="country-text" id="vt-text">НЕСЕБЪР</div>
+            </div>
+            <div class="country" id="sofia-div">
+                <img src="https://cdn.pixabay.com/photo/2019/08/27/19/37/bulgaria-4435051_1280.jpg" alt="sofia">
+                <div class="country-text" id="sofia-text">СОФИЯ</div>
+            </div>
+            <div class="country" id="kopriv-div">
+                <img src="https://cdn.pixabay.com/photo/2014/05/01/11/39/kableshkova-kashta-335426_1280.jpg"
+                    alt="koprivshtitsa">
+                <div class="country-text" id="kopriv-text">КОПРИВЩИЦА</div>
+            </div>
+            <div class="country" id="plov-div">
+                <img src="https://cdn.pixabay.com/photo/2015/03/12/16/35/the-old-town-670457_1280.jpg" alt="plovdiv">
+                <div class="country-text" id="plov-text">ПЛОВДИВ</div>
+            </div>
+        </div>
+
+
+        <div class="different-hotels">
+            <img src="https://cdn.pixabay.com/photo/2020/03/06/07/58/editorial-4906307_960_720.jpg" alt="hotel front">
+            <div class="different-hotels-div">
+                <h2>100 национални туристически обекта</h2>
+                <p>Движението е създадено през 1966 г. по инициатива на Българския туристически съюз. Основната му идея
+                    е всеки турист да се запознае с най-хубавите и най-свидните за всеки българин планини, природни и
+                    исторически забележителности, музеи и паметници. Началото е поставено на Черни връх в планината
+                    Витоша. Още през следващата година през месец юли, на връх Мусала, първите призьори получават
+                    златните си значки. Днес в страната има над 8900 души носители на златни значки.</p>
+                <a href="https://www.btsbg.org/nacionalni-dvizheniya/100-nacionalni-turisticheski-obekta">
+                    <button type="submit" class="submit">Виж повече</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="back-to-top">
+            <button onclick="topFunction()" class="submit"> ⬆ Обратно нагоре</button>
+        </div>
+
+        <hr class="footer-line">
+
+        <div class="footer">
+            <div class="col-1">
+                <div>
+                    <h3>Свържете се с нас!</h3>
+                    <div class="social-icons">
+                        <em class="fa-brands fa-facebook"></em>
+                        <em class="fa-brands fa-twitter"></em>
+                        <em class="fa-brands fa-instagram"></em>
+                        <em class="fa-brands fa-youtube"></em>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-2">
+                <a href="about.html">За нас</a>
+                <a href="cookies.html">Бисквитки</a>
+                <a href="contacts.html">Контакти</a>
+    
+                <a href="agreement.html">Декларация за поверителност</a>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
